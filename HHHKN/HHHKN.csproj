@@ -122,6 +122,20 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Views\Source\css\bootstrap.min.css" />
+    <Content Include="Views\Source\css\elegant-icons.css" />
+    <Content Include="Views\Source\css\font-awesome.min.css" />
+    <Content Include="Views\Source\css\jquery-ui.min.css" />
+    <Content Include="Views\Source\css\nice-select.css" />
+    <Content Include="Views\Source\css\owl.carousel.min.css" />
+    <Content Include="Views\Source\css\slicknav.min.css" />
+    <Content Include="Views\Source\css\style.css" />
+    <Content Include="Views\Source\fonts\ElegantIcons.svg" />
+    <Content Include="Views\Source\fonts\fontawesome-webfont.svg" />
+    <Content Include="Views\Source\img\breadcrumb.jpg" />
+    <Content Include="Views\Source\img\language.png" />
+    <Content Include="Views\Source\img\logo.png" />
+    <Content Include="Views\Source\img\payment-item.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +230,16 @@
     <Content Include="Public\webfonts\fa-solid-900.ttf" />
     <Content Include="Public\webfonts\fa-solid-900.woff" />
     <Content Include="Public\webfonts\fa-solid-900.woff2" />
+    <Content Include="Views\Shared\_LayoutSite.cshtml" />
+    <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\Source\fonts\ElegantIcons.eot" />
+    <Content Include="Views\Source\fonts\ElegantIcons.ttf" />
+    <Content Include="Views\Source\fonts\ElegantIcons.woff" />
+    <Content Include="Views\Source\fonts\fontawesome-webfont.eot" />
+    <Content Include="Views\Source\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Views\Source\fonts\fontawesome-webfont.woff" />
+    <Content Include="Views\Source\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Views\Source\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -227,8 +251,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Public\images\Product\" />
-    <Folder Include="Views\Shared\" />
-    <Folder Include="Views\TrangChu\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
