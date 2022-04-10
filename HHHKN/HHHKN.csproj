@@ -111,6 +111,22 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Css\bootstrap.min.css" />
+    <Content Include="Content\Css\elegant-icons.css" />
+    <Content Include="Content\Css\font-awesome.min.css" />
+    <Content Include="Content\Css\jquery-ui.min.css" />
+    <Content Include="Content\Css\nice-select.css" />
+    <Content Include="Content\Css\owl.carousel.min.css" />
+    <Content Include="Content\Css\slicknav.min.css" />
+    <Content Include="Content\Css\style.css" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\js\jquery-ui.min.js" />
+    <Content Include="Content\js\jquery.nice-select.min.js" />
+    <Content Include="Content\js\jquery.slicknav.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\mixitup.min.js" />
+    <Content Include="Content\js\owl.carousel.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Public\css\all.min.css" />
     <Content Include="Public\webfonts\fa-brands-400.svg" />
@@ -328,6 +344,7 @@
     <Content Include="Views\Source\sass\_shoping-cart.scss" />
     <Content Include="Views\Source\sass\_sidebar.scss" />
     <Content Include="Views\Source\sass\_variable.scss" />
+    <Content Include="Views\Shared\_LayoutSite1.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
