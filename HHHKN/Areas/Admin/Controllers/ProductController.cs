@@ -17,6 +17,7 @@ namespace HHHKN.Areas.Admin.Controllers
         private HHHKNDBContext db = new HHHKNDBContext();
 
         // GET: Admin/Product
+       
         public ActionResult Index()
         {
             var list = db.Products
@@ -45,11 +46,11 @@ namespace HHHKN.Areas.Admin.Controllers
                         CatName = c.Name
                     }
                   )
-
-                .Where(m => m.Status != 0)
+                    
+                .Where(m => m.Status !=  0)
                 .OrderByDescending(m => m.Created_At)
                 .ToList();
-            return View(list);
+           return View(list);
         }
 
         // GET: Admin/Product/Details/5
@@ -92,9 +93,9 @@ namespace HHHKN.Areas.Admin.Controllers
                 //HÌNH ẢNH
                 var Img = Request.Files["fileimg"];
                 string[] FileExtention = { ".jpg", ".png", ".jpeg", ".gif" };
-                if (Img.ContentLength != 0)
+                if(Img.ContentLength != 0)
                 {
-                    if (FileExtention.Contains(Img.FileName.Substring(Img.FileName.LastIndexOf("."))))
+                    if(FileExtention.Contains(Img.FileName.Substring(Img.FileName.LastIndexOf("."))))
                     {
                         //Upload hình
                         string imgName = slug + Img.FileName.Substring(Img.FileName.LastIndexOf("."));
@@ -134,7 +135,7 @@ namespace HHHKN.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Product product)
+        public ActionResult Edit( Product product )
         {
             if (ModelState.IsValid)
             {
@@ -149,7 +150,7 @@ namespace HHHKN.Areas.Admin.Controllers
                 {
                     if (FileExtention.Contains(Img.FileName.Substring(Img.FileName.LastIndexOf("."))))
                     {
-                        if (product.Img == null)
+                        if(product.Img == null)
                         {
                             //Upload hình
                             string imgName1 = slug + Img.FileName.Substring(Img.FileName.LastIndexOf("."));
@@ -160,7 +161,7 @@ namespace HHHKN.Areas.Admin.Controllers
                         }
                         //XOÁ HÌNH
                         String DelPath = Path.Combine(Server.MapPath("~/Public/images/Product/"), product.Img);
-                        if (System.IO.File.Exists(DelPath))
+                        if(System.IO.File.Exists(DelPath))
                         {
                             System.IO.File.Delete(DelPath);
                         }

@@ -14,5 +14,9 @@ namespace HHHKN.Controllers
         {
             return View(db.Products.ToList());
         }
+        public ActionResult Abcd()
+        {
+            return View();
+        }
     }
 }
